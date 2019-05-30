@@ -33,9 +33,9 @@ def main():
         yaml_in = yaml.load(std_input, Loader=yaml.FullLoader)
         print(json.dumps(yaml_in))
     except yaml.YAMLError as e:
-        print("No valid yaml input: {}".format(e.msg))
+        print("No valid yaml input: {}".format(e))
     except Exception as e:
-        print("Error: {}".format(e.msg))
+        print("Error: {}".format(e))
 
 
 if __name__ == '__main__':
